@@ -1,0 +1,56 @@
+/* General body styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: black;
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    /* overflow: hidden; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    animation: animateStars 50s linear infinite;
+}
+
+/* Styling for each category container */
+.category {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #007BFF;
+}
+
+/* Paragraph styling for questions and counts */
+p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Keyframes for animating background stars */
+@keyframes animateStars {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
